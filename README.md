@@ -124,7 +124,7 @@ Download the project from github to your desktop:
 
 `Note:`check folder **Videos** to view the full project and know better about all the website functionalities.<br>
 
-<h1>CoffeeShop Website:</h1> <br>
+<h1>CoffeeShop Website:</h1> 
 
 <br>-**Welcome Page:** <br>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/82551484/194729462-57e2b6f6-bceb-44b1-b269-5499b0fd704a.gif" /></br>
