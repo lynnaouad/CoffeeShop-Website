@@ -126,19 +126,22 @@ Download the project from github to your desktop:
 
 <h1>CoffeeShop Website:</h1> 
 
-<br>-**Welcome Page:** <br>
+- **Welcome Page:** <br>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/82551484/194729462-57e2b6f6-bceb-44b1-b269-5499b0fd704a.gif" /></br>
+<br>
 
-<br>-**Offers Section:**<br>
+- **Offers Section:**<br>
 <img src="https://user-images.githubusercontent.com/82551484/194728627-d505cdc9-a6e6-4e13-acca-5f6145af0ed6.png" /><br>
 <img src="https://user-images.githubusercontent.com/82551484/194729012-a54dd691-1960-4638-b9be-c0e961ed0f40.png" /><br>
+<br>
 
-<br>-**About Section:**<br>
+- **About Section:**<br>
 <img src="https://user-images.githubusercontent.com/82551484/194728721-0774cfb7-caba-4ce4-aba8-47f90d063ba8.png" /></br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/82551484/194729495-81cf0292-3cd9-4d1c-a1db-08d492e1995f.gif" /></br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/82551484/194729501-a6f0a3d9-5981-44e1-97fe-be9e79838c0c.gif" /></br>
+<br>
 
-<br>-**Menu Section:**<br>
+- **Menu Section:**<br>
 <img src="https://user-images.githubusercontent.com/82551484/194729140-6500ebaa-8caf-4ac6-98e7-233318d8f736.png" /></br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/82551484/194729578-6624c6ef-84cb-4708-9ab1-144447a6ec21.gif" /></br>
            
@@ -148,19 +151,20 @@ Download the project from github to your desktop:
                                                                                                             
 `Note:` We can change the currency.<br>
 <img src="https://user-images.githubusercontent.com/82551484/194729209-9e110433-88a9-42f0-92de-0a1d9f479a07.png" /><br>
+<br>
 
--**Toppings Section:**<br>
+- **Toppings Section:**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/82551484/194729605-200417f8-94dd-4a91-bd79-21468f269931.gif" /></br>   
 <img src="https://user-images.githubusercontent.com/82551484/194728925-5ed5558b-cc97-4422-bfbb-d66a4c219cc7.png" /></br>
 <img src="https://user-images.githubusercontent.com/82551484/194728930-c130fc66-f0be-4d82-bf3c-4abd3101f133.png" /></br>
-                                                                                                             
+<br>                                                                                                            
 
-<br>-**Reviews Section:**<br>
+- **Reviews Section:**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/82551484/194730014-7cd12cab-a2cf-425b-8a9f-16d4efda2aed.jpg" ><br>     
 <img src="https://user-images.githubusercontent.com/82551484/194729181-c04c6997-fd24-46b0-9827-c7dc665765b8.png" ><br>
-                                                                                                           
+<br>                                                                                                           
 
-<br>-**Place Order:**<br>
+- **Place Order:**<br>
 <img src="https://user-images.githubusercontent.com/82551484/194729428-e9bbf755-e85c-41d8-bf0a-542826e41eb4.png" ><br>
 <img src="https://user-images.githubusercontent.com/82551484/194729434-82854cf7-ff3e-45e3-a669-0b723248cf6f.png" ><br>
 
