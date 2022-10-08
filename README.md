@@ -75,7 +75,7 @@ Download the project from github to your desktop:
       git clone https://github.com/lynnaouad/CoffeeShop-Website.git
       ```
       
-      **5.** When you run `git clone https://github.com/MouhammadAyoub/CVs-repository.git`, You should see output like
+      **5.** When you run `git clone https://github.com/lynnaouad/CoffeeShop-Website.git`, You should see output like
       ```shell
       Cloning into 'test-repo'...
       remote: Counting objects: 5, done.
