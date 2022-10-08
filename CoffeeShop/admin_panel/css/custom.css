@@ -1,0 +1,955 @@
+:root {
+    --green: #27ae60;
+    --light-green:  rgb(106, 230, 106);
+    --black: #192a56;
+    --orange: #ffb674;
+    --dark-orange: #fc8d67;
+    --light-orange: #fec5b1;
+    --green2: #369583;
+    --purple: #8c74ff;
+    --blue: #74bdff;
+    --light-blue: #74e7ff;
+    --light-pink: #ffb3e4;
+    --brown: #564519;
+    --pink: #ff7497;
+    --light-color: #666;
+    --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  }
+
+body, html {
+    font-family: 'Roboto', sans-serif;
+     color: #555e58;
+	 font-weight: 400;
+	 margin:0px;
+     padding:0px;
+}
+
+button{
+    border:none;
+    outline:none;
+    background-color:transparent;
+}
+
+
+
+p {
+	font-size: 15px;
+	margin: 12px 0 0;
+	line-height: 24px;
+}
+
+
+
+a{
+	color: #333;
+	font-weight: 400;
+}
+
+button:focus{
+	box-shadow:none;
+	outline:none;
+	border:none;
+}
+
+button{
+	cursor:pointer;
+}
+
+ul, ol {
+	padding: 0;
+	margin:0px;
+		list-style: none;
+}
+
+
+
+a,
+a:hover,
+a:focus {
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+
+
+/*=======================================================
+  material-icons  copy & paste form site google material-icons
+  ==================================================*/
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+/*=======================================================
+  material-icons  copy & paste form site google material-icons
+  ==================================================*/
+
+.wrapper {
+	position: relative;
+    width:100%;
+	overflow:auto;
+}
+
+
+/*=======================================================
+  Modal
+  ==================================================*/
+
+#add_modal .image{
+    width:100px;
+    height:100px;
+    
+}
+    
+
+#add_modal .image img{
+    max-width:100%;
+    max-height:100%;
+    object-fit: cover;
+    
+}
+
+
+#add_modal .BODY {
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+#add_modal .BODY .elements{
+    width:100%;
+    background-color:red;
+    display:flex;
+    justify-content:center;
+}
+
+.new_image{
+    margin-top:1em;
+}
+
+
+
+/*=======================================================
+   admin managers start
+   ===============================================*/  
+
+   .round_img{
+       width:3em;
+       height:3em;
+       border-radius: 50%;
+       object-fit: cover;
+   }
+
+   .img_toppings{
+
+    width:2em;
+    height:2em;
+    border-radius: 50%;
+    object-fit: cover;
+
+   }
+
+   .submit{
+       cursor:pointer;
+   }
+
+   
+/*=======================================================
+   Reviews
+   ===============================================*/ 
+
+   .container1{
+    position:relative; 
+    width:40vw; 
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .stars_container{
+       width:100%;
+       display:flex;
+       justify-content:space-between;
+   }
+
+
+  .stars_container .fa-star {
+
+  font-size: 8em;
+  color: yellow;
+  cursor: pointer;
+}
+
+.stars_container .fa-star:hover{
+    color: rgba(255, 206, 86, 1);
+
+}
+
+.star_element{
+    width:fit-content;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center  
+}
+
+.reviews_stat{
+    width:100%;
+    display:flex;
+}
+
+.review{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1rem;
+    
+}
+
+
+.review .slide {
+    margin:1rem;
+    padding: 2rem;
+    height:auto;
+    box-shadow: var(--box-shadow);
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    position: relative;
+  }
+  
+  .review .slide .fa-quote-right {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: #ccc;
+  }
+  
+  .review .slide .user {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+
+  
+  .review .slide .user h3 {
+    color: var(--black);
+    font-size: 1.2rem;
+    padding-bottom: 0.3rem;
+  }
+
+  .review .slide .user h4 {
+    color: var(--black);
+    font-size: 1rem;
+    
+  }
+  
+  .review .slide .user i {
+    font-size: 1rem;
+  }
+  
+  .review .slide p {
+    font-size: 1rem;
+    line-height: 1.2;
+    color: var(--light-color);
+  }
+  
+  .rounded-circle{
+    width:4.2rem;
+    height: 4.2rem;
+    background-color: #2196F3;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .rounded-circle .text-center{
+    color:white;
+    font-size: 1.3rem;
+  }
+
+
+.status{
+ margin-top: 3em;
+ width:10em;
+ position: relative;
+ border: none;
+ background: transparent;
+ padding: 0;
+ cursor: pointer;
+ outline-offset: 4px;
+ transition: filter 250ms;
+ user-select: none;
+ touch-action: manipulation;
+}
+
+.status .shadow {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ border-radius: 12px;
+ background: hsl(0deg 0% 0% / 0.25);
+ will-change: transform;
+ transform: translateY(2px);
+ transition: transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.status .edge {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ border-radius: 12px;
+ background: linear-gradient(
+    to left,
+    hsl(340deg 100% 16%) 0%,
+    hsl(340deg 100% 32%) 8%,
+    hsl(340deg 100% 32%) 92%,
+    hsl(340deg 100% 16%) 100%
+  );
+}
+
+.status .front {
+ display: block;
+ position: relative;
+ padding: 12px 27px;
+ border-radius: 12px;
+ font-size: 1.1rem;
+ color: white;
+ background: hsl(345deg 100% 47%);
+ will-change: transform;
+ transform: translateY(-4px);
+ transition: transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.status:hover {
+ filter: brightness(110%);
+}
+
+.status:hover .front {
+ transform: translateY(-6px);
+ transition: transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.status:active .front {
+ transform: translateY(-2px);
+ transition: transform 34ms;
+}
+
+.status:hover .shadow {
+ transform: translateY(4px);
+ transition: transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.status:active .shadow {
+ transform: translateY(1px);
+ transition: transform 34ms;
+}
+
+.status:focus:not(:focus-visible) {
+ outline: none;
+}
+
+.status_info{
+    margin-top: 2em;
+}
+
+.BAD{
+    color:red;
+}
+
+.GOOD{
+    color:orange;
+}
+
+.EXCELLENT{
+    color:green;
+}
+
+/*=============================================
+  Manager menu
+  =========================================*/
+
+.menu_card {
+    width: 10em;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f2f2f3;
+    border-radius: 12px;
+    box-shadow: inset 5px 5px 10px #a9a9aa77,
+                 inset -5px -5px 10px #ffffff7e;
+   }
+   
+   .menu_card .img {
+    height: 100px;
+    margin-top: 1.6em;
+    aspect-ratio: 1;
+    border-radius: 30%;
+    background: #f2f2f3;
+    margin-bottom: 0.4em;
+    box-shadow: -5px -5px 8px #ffffff7a, 
+                 5px 5px 8px #a9a9aa7a;
+   }
+
+   .menu_card .img img{
+       width:100%;
+       height:100%;
+       
+   }
+   
+   .menu_card .info {
+    text-align: center;
+    margin-top: 0.4em;
+    background: linear-gradient(120deg, rgba(0,194,255,1) 0%, rgba(0,86,255,1) 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   }
+   
+   .menu_card .info > span {
+    font-weight: bold;
+    font-size: 1.2em;
+   }
+
+
+   .menu{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        gap: 1rem;
+   }
+
+/*=============================================
+  Manager menu items
+=========================================*/
+
+  
+   .show {
+    display: block;
+  }
+
+  .menuItems select{
+        padding:.5em;
+        text-align: center;
+        cursor:pointer;
+        
+  }
+
+  
+.item_card {
+    width: 18em;
+    height: auto;
+    padding: .8em;
+    background: #f5f5f5;
+    position: relative;
+    overflow: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+   }
+   
+   .item_card .card-img {
+    height: 15rem;
+    width: 100%;
+    border-radius: .5rem;
+    transition: .3s ease;
+   }
+
+
+   .item_card .card-img img {
+  height: 100%;
+  width: 100%;
+  border-radius: .5rem;
+  object-fit: cover;
+  object-position: top;
+}
+   
+   .item_card .card-info {
+    margin-top: 1em;
+   }
+   
+
+   
+   .item_card .card-footer {
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+   }
+   
+
+   .item_card .text-title {
+    font-weight: 900;
+    font-size: 1.2em;
+    line-height: 1.5;
+   }
+   
+   .item_card .text-body {
+    font-size: .8em;
+    padding-bottom: 10px;
+   }
+
+
+   .item_card .card-button {
+    border: 1px solid #252525;
+    display: flex;
+    padding: .3em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+   }
+
+   .menuItems{
+       margin-top: 1em;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        gap: 1rem;
+   }
+
+   .menuItems .item_card {
+  display: none;
+}
+
+.menuItems .item_card.show {
+  display: block;
+}
+
+
+/*=============================================
+  Manager toppings
+=========================================*/
+
+.show{
+    display:block;
+}
+
+.toppings{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1rem;
+}   
+
+  
+  .toppings .toppings_info.show {
+    display: block;
+  }
+
+.toppings .toppings_info{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.toppings .toppings_info .topping-img{
+    width:5em;
+    height: 5em;
+    border-radius: 50%;
+}
+
+
+.toppings .toppings_info .topping-img img{
+    width:100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+   
+}
+
+.toppings .toppings_info .card-title{
+    display:flex;
+    flex-direction: column;
+}
+
+
+.toppings .toppings_info .topping-price{
+    font-weight: bold;
+    color: green;
+}
+
+.toppings .toppings_info .card-button{
+    width: fit-content;
+    border:1px solid black;
+}
+
+.toppings .toppings_info{
+    display: none;
+  }
+  
+  .toppings .toppings_info.show {
+    display: block;
+  }
+
+/*=============================================
+  manager offers
+  =========================================*/  
+  
+.offer .item_card {
+    width: 18em;
+    height: auto;
+    padding: .8em;
+    background: #f5f5f5;
+    position: relative;
+    overflow: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+   }
+   
+   .offer .item_card .card-img {
+    height: 15rem;
+    width: 100%;
+    border-radius: .5rem;
+    transition: .3s ease;
+   }
+
+
+   .offer .item_card .card-img img {
+  height: 100%;
+  width: 100%;
+  border-radius: .5rem;
+  object-fit: cover;
+  object-position: top;
+}
+   
+.offer .item_card .card-info {
+    margin-top: 1em;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   
+
+   
+   .offer .item_card .card-footer {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+   }
+   
+
+   .offer .item_card .text-title {
+    font-weight: 900;
+    font-size: 1.2em;
+    line-height: 1.5;
+   }
+   
+   .offer .item_card .text-body {
+    font-size: 1em;
+    
+   }
+
+
+   .offer .item_card .card-button {
+    border: 1px solid #252525;
+    display: flex;
+    padding: .3em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+   }
+
+   .offer{
+       margin-top: 1em;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        gap: 1rem;
+   }
+
+   
+.offer .prices {
+    text-align: center;
+    display: flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .offer .prices span {
+    color: var(--light-color);
+    font-weight:lighter;
+    font-size: 1.3rem;
+    position: relative;
+    margin-right:.5em;
+  }
+  
+  .offer .prices .pourcentage{
+    font-size: 1.1rem;
+  }
+  
+  .offer .prices .new_price {
+    font-weight: bolder;
+    color: red;
+    font-size: 1.5rem;
+  }
+  
+  .offer .prices .new_price span{
+    font-weight: bolder;
+    color: green;
+    font-size: 1.5rem;
+  }
+
+  .offer .prices .old_price span {
+    position: absolute;
+    width: 100%;
+    border-top: 1px solid red;
+    left: 0;
+    top: 50%;
+  }
+
+  .offer .warning_mess{
+    font-weight: bolder;
+    color: red;
+  }
+
+  .viewOrder{
+    background-color: #eee;
+    border:1.5px solid gray;
+    padding: .3em;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+
+  
+   
+
+   
+
+
+
+
+/*=============================================
+  footer design start
+  =========================================*/
+ 
+.footer {
+    border-top: 1px solid #e7e7e7;
+}
+
+footer {
+    padding: 10px 0;
+	position:relative;
+	width:100%;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+footer ul li a {
+    color: inherit;
+    padding: 15px;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    text-decoration: none;
+    position: relative;
+    display: block;
+}
+
+
+footer .copyright {
+    padding: 15px;
+	font-size:14px;
+    margin: 0;
+}
+
+
+
+  
+
+
+#sidebar.show-nav,.body-overlay.show-nav{
+	transform:translatex(0%);
+	opacity:1;
+	display:block;
+	visibility:visible;
+	z-index:15;
+}
+
+
+
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media only screen and (max-width:1187px){
+
+    .stars_container .fa-star {
+        font-size: 5em;
+}
+
+
+
+}
+
+@media only screen and (min-width:992px){
+	#sidebar.active {
+    width:80px;
+	height:100%!important;
+	position:absolute!important;
+	overflow:visible!important;
+	top:0!important;
+	z-index:666;
+	float:left!important;
+    bottom: 0!important;
+}
+
+
+#sidebar.active .sidebar-header h3 span {
+   display:none;
+   transition:all 0.5s ease;
+}
+
+#sidebar.active ul li a span{
+    display:none;
+	transition:all 0.5s ease;
+}
+
+#sidebar.active .dropdown-toggle::after {
+    display:none;
+	transition:all 0.5s ease;
+}
+
+#content {
+    width: calc(100% - 260px);
+    position: relative;
+    float: right;
+    transition: all 0.3s;
+    background-color: #EEEEEE;
+}  
+
+#content.active {
+    width: calc(100% - 80px);
+} 
+
+#sidebar.active .menu {
+    position: absolute;
+    left: 81px;
+    background-color: white;
+    width: 180px;
+    height: auto;
+    margin: 5px 0;
+    top: 0;
+    border: 1px solid #dcd9d9;
+    z-index: 4;
+}                                                                                                                                                                                                              
+}
+
+
+@media only screen and (min-width:992px){
+.dropdown-menu {
+    border: 0;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 26%);
+	transform: translate3d(0, -20px, 0);
+    visibility: hidden;
+	transition: all 150ms linear;
+    display: block;
+	min-width:15rem;
+	right: 0;
+    left: auto;
+    opacity: 0;
+}
+	
+}
+
+
+/*===============small-screen overlay sidebar design media queries==============*/
+
+@media only screen and (max-width:992px){
+#sidebar {
+    position:fixed;
+    top: 0;
+    bottom:0;
+    z-index: 10;
+    width: 260px;
+	transform:translatex(-100%);
+	transition: all 150ms linear;
+	box-shadow:none!important;
+}	
+
+.body-overlay{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	display:none;
+	visibility:hidden;
+	opacity:0;
+	z-index:3;
+	transition: all 150ms linear;
+	background-color:rgba(0,0,0,0.5);
+}
+}
+
+
+/*===============small-screen overlay sidebar design media queries==============*/
+
+
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+
+

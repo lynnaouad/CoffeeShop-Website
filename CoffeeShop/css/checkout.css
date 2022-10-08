@@ -1,0 +1,193 @@
+* {
+  text-transform: none;
+}
+
+.checkout {
+  width: 100vw;
+  height: auto;
+  margin-top: 10em;
+  margin-bottom: 3em;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container1{
+    width:90%;
+    display:flex;
+    justify-content: center;
+}
+
+.container2{
+    width:90%;
+    display:flex;
+}
+
+.payment_details{
+    width:50%;
+    padding-left:5em;
+}
+
+
+
+.billing_details{
+    width:50%;
+    border-right:1px solid #ddd;
+    padding-right: 4em;
+}
+
+.order_details{
+    width:40%;
+    margin-left:4em;
+}
+
+table {
+  margin-top: 2.3em;
+
+}
+
+table .product_name {
+  display: flex;
+  align-items: center;
+}
+
+table tr {
+  vertical-align: center;
+}
+
+table .image {
+  width: 3em;
+  height: 3em;
+  border-radius: 0.5rem;
+  margin-right: 0.5em;
+}
+
+table .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.require {
+  border: 1px solid #ff0000;
+  background-color: #cbd9ed;
+}
+
+.valid {
+  border: 1px solid lightgreen;
+  background-color: white;
+}
+
+
+
+.checkout h1 {
+  color: var(--orange);
+}
+
+.checkout .form-group label {
+  padding: 0.5rem 0;
+  font-size: 1.2rem;
+  color: var(--light-color);
+}
+
+.checkout h4 {
+  font-size: 1.2rem;
+}
+
+.checkout .form-group .form-control {
+  background: rgb(245, 245, 245);
+  border-radius: 0.5rem;
+  padding: 0.7rem;
+  font-size: 1.3rem;
+  color: var(--black);
+}
+
+.checkout .form-group span {
+  margin-bottom: 1rem;
+}
+
+.checkout .form-group .form-control:focus {
+  border: 0.1rem solid var(--orange);
+  background: white;
+  box-shadow: var(--box-shadow);
+}
+
+.checkout .form-group textarea {
+  height: 8rem;
+  resize: none;
+}
+
+.place_order{
+  width:90%;
+    display:flex;
+   justify-content: flex-start;
+   padding-left:5em;
+}
+
+.checkout .btn-success {
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  font-size: 1.3rem;
+  margin-bottom: 1em;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
+@media (max-width: 700px){
+
+    .container1{
+       flex-direction: column;
+       align-items: center;
+    }
+
+        
+    .billing_details{
+        width:95%;
+        border-right:1px solid #ddd;
+        padding-right: 4em;
+    }
+
+    .order_details{
+        width:95%;
+        margin-left:0;
+    }
+
+    .billing_details{
+        border-right:none;
+        padding-right: 0;
+        
+        }
+
+
+    .payment_details{
+        width:95%;
+        padding-right: 1em;
+    }
+
+    .place_order{
+       justify-content: center;
+       padding-left:0;
+    }
+}
+
+@media (max-width: 400px){
+
+    .checkout .form-group textarea {
+        height: 5rem;
+      }
+
+}

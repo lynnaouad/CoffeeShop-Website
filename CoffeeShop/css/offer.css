@@ -1,0 +1,451 @@
+/****************** offer ********************/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+.offers .category {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(5rem, 1fr));
+  gap: 1.5rem;
+  padding-bottom: 2em;
+}
+
+.offers .category .cat {
+  padding: 1rem;
+  text-align: center;
+  border-radius: .5rem;
+  background: #f7f7f7;
+}
+
+.offers .category .cat img {
+  border-radius: .5rem;
+  width:100%;
+  height: 7rem;
+  object-fit: cover;
+}
+
+
+.banner .grid-banner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.banner .grid-banner .grid {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  height: 45rem;
+}
+
+.banner .grid-banner .grid:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.banner .grid-banner .grid img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.banner .grid-banner .grid .content {
+  position: absolute;
+  top: 2rem;
+  padding: 0 2rem;
+}
+
+
+.banner .grid-banner .grid .content span {
+  font-family: 'Satisfy', cursive;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.banner .grid-banner .grid .content h3 {
+  font-size: 3rem;
+  color: #fff;
+  padding-top: .5rem;
+}
+
+
+.offer{
+  margin-top: 6em;
+}
+
+.offer h1 .fa-arrow-left{
+  margin-right: 1em;
+}
+
+.offer .box-container {
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: 1.5rem;
+}
+
+.offer .box-container .box {
+  padding:1.5rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.offer .box-container .box .fa-heart,
+.offer .box-container .box .fa-eye {
+  position: absolute;
+  top: 1rem;
+  background: #eee;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.offer .box-container .box .fa-heart:hover,
+.offer .box-container .box .fa-eye:hover {
+  background: var(--orange);
+  color: #fff;
+}
+
+.offer .box-container .box .fa-heart {
+  right: -15rem;
+}
+
+.offer .box-container .box .fa-eye {
+  left: -15rem;
+}
+
+.offer .box-container .box:hover .fa-heart {
+  right: .8rem;
+}
+
+.offer .box-container .box .image {
+  height: 28rem;
+  width: 100%;
+
+  position: relative; 
+}
+
+.offer .box-container .box img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.offer .box-container .box .content {
+  margin-top: 1rem;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.offer .box-container .box .content h3 {
+  color: var(--black);
+  font-size: 2.2rem;
+}
+
+.offer .box-container .box .content .description div .fa-arrow-left,
+.offer .box-container .box .content .description div h3 {
+  display: none;
+}
+
+.offer .box .content .prices {
+  text-align: center;
+  display: flex;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer .box-container .box .content .prices span {
+  color: var(--light-color);
+  font-weight:lighter;
+  font-size: 1.8rem;
+  position: relative;
+  margin-right:.5em;
+}
+
+.offer .box-container .box .content .prices .pourcentage{
+  font-size: 1.6rem;
+}
+
+.offer .box-container .box .content .prices .new_price {
+  font-weight: bolder;
+  color: red;
+  font-size: 2rem;
+}
+
+.offer .box-container .box .content .prices .new_price span{
+  font-weight: bolder;
+  color: red;
+  font-size: 2rem;
+}
+
+.offer .box-container .box .content .description p {
+  color: var(--light-color);
+  font-size: 1.3rem;
+  padding: 0.5rem 0;
+  height: 48px;
+  line-height: 1.2;
+  overflow: hidden;
+}
+
+.offer .box-container .box .content .qtybtns{
+  display: flex;
+  height: auto;
+  align-items: center;
+}
+
+.offer .box-container .box .content .qtybtns span{
+  font-size: 1.6rem;
+  margin-left: .8em;
+  font-weight: bold;
+  margin-right: .8em;
+  color: var(--black);
+}
+
+.offer .box-container .box .content .QTY{
+  margin-top: .2em;
+  padding: .2em .5rem;
+  
+  font-size: 1rem;
+  color: var(--black);
+  background-color: var(--black);
+  cursor: pointer;
+  border:none;
+  font-weight: bolder;
+  color:white;
+  text-align: center;
+  border-radius: 20px;
+}
+
+
+.offer .box-container .box .content .prices .old_price span {
+  position: absolute;
+  width: 100%;
+  border-top: 1px solid red;
+  left: 0;
+  top: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 750px) {
+  
+  .offers .category {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(5rem, 1fr));
+    gap: 1.5rem;
+    padding-bottom: 5rem;
+  }
+
+
+  .offer .box-container {
+    grid-template-columns: repeat(3, minmax(5rem, 1fr));
+    gap: 0.5rem;
+  }
+
+  .offer .box-container .box {
+    padding: 1rem;
+  }
+
+  .offer .box-container .box .image {
+    width: 100%;
+    height: 10em;
+  }
+
+  .offer .box-container .box img {
+    width: 100%;
+    height: 10em;
+  }
+
+  .offer .box-container .box .content h3 {
+    margin-bottom: 0.5em;
+    font-size: 1rem; 
+  }
+
+  .offer .box-container .box .content .description {
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    padding: 1em;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--light-orange);
+    display: none;
+  }
+
+  .offer .box-container .box .content .description div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .offer .box-container .box .content .description div .fa-arrow-left {
+    color: white;
+    cursor: pointer;
+    display: block;
+    align-self: flex-start;
+    height: 2rem;
+    width: 2rem;
+    line-height: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .offer .box-container .box .content .description div h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: .5em;
+    display: block;
+    color: white;
+    align-self: flex-start;
+  }
+
+  .offer .box-container .box .content .description p {
+    font-size: 1rem;
+    line-height: 1;
+    text-align: center;
+    color: var(--black);
+    overflow:visible;
+  }
+
+  .offer .box-container .box:hover .content p {
+    display: block;
+  }
+
+
+ 
+  .offer .box-container .box .content .prices span {
+    font-size: .9rem;
+  }
+
+  
+  .offer .box-container .box .content .prices .pourcentage {
+    font-size: .9rem;
+  }
+
+  .offer .box-container .box .content .prices .new_price {
+    font-size: 1rem;
+
+  }
+
+  .offer .box-container .box .content .prices .new_price span {
+    font-size: 1rem;
+  }
+
+  .offer .box-container .box .content .prices .old_price span {
+    top: 40%;
+  }
+
+  .offer .box-container .box .content .btn {
+    margin-top: 0.3rem;
+    font-size: 1rem;
+    padding: 0.8em 1.3em;
+  }
+
+  .offer .box-container .box .fa-heart,
+  .offer .box-container .box .fa-eye {
+    position: absolute;
+    top: .5rem;
+    background: #eee;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    line-height: 2rem;
+    font-size: 1rem;
+    color: var(--black);
+    cursor: pointer;
+  }
+
+  .offer .box-container .box .fa-heart {
+    right: .8rem;
+  }
+
+  .offer .box-container .box .fa-eye {
+    left: .8rem;
+  }
+  .offer .box-container .box .content .qtybtns span{
+    font-size: 1.4rem;
+    margin-left: .3em;
+    margin-right: .3em;
+  }
+
+  .offer .box-container .box .content .QTY{
+    font-size: .7rem;
+}
+  
+}
+
+
+
+
+@media(max-width: 600px){
+
+  .offers .category {
+    gap: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .offers .category .cat {
+    padding: .5rem;
+    text-align: center;
+    border-radius: .5rem;
+    background: #f7f7f7;
+  }
+  
+  .offers .category .cat img {
+    height: 5rem;
+  }
+}
+
+@media (max-width: 510px) {
+
+  .offer .box-container .box .content .prices span {
+    font-size: 1rem;
+  }
+
+  
+  .offer .box-container .box .content .prices .pourcentage {
+    font-size: 1rem;
+  }
+
+  .offer .box-container .box .content .prices .new_price {
+    font-size: 1.2rem;
+
+  }
+
+  .offer .box-container .box .content .prices .new_price span {
+    font-size: 1.2rem;
+  }
+
+
+
+}
+
+@media (max-width: 431px) {
+  .offer .box-container .box .content h3 {
+    height: 20px;
+  }
+}
+
+

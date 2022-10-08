@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+html * {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  margin:0 auto;
+}
+
+.content {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.header {
+  width: 60%;
+  background: #62737b;
+  margin:2em 0;
+}
+
+.header h1 {
+  font-family: "Lucida Grande", Tahoma, Verdana, sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+.main {
+  width: 100%;
+  background: #f1f1f1;
+  display:flex;
+  justify-content: center; 
+}
+
+.main img {
+  height: 8em;
+  width: 8em;
+  margin-bottom: 1em;
+}
+
+.container {
+  width: 20em;
+}
+
+.login {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 1em 1em;
+  width: 100%;
+  background: white;
+  border-radius: 3px;
+  box-shadow:0 0 200px rgba(white, 0.5), 0 1px 2px rgba(black, 0.3); }
+
+:-moz-placeholder {
+  color: #c9c9c9 !important;
+  font-size: 13px;
+}
+
+::-webkit-input-placeholder {
+  color: #ccc;
+  font-size: 13px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+input {
+  font-family: "Lucida Grande", Tahoma, Verdana, sans-serif;
+  font-size: .9rem;
+  margin: .5em;
+  padding: 0 .8em;
+  width: 100%;
+  color: #404040;
+  background: white;
+  border: 1px solid;
+  border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+  border-radius: 2px;
+  outline: 5px solid #eff4f7;
+  -moz-outline-radius: 3px; 
+  box-shadow:inset 0 1px 3px rgba(black, 0.12);
+  line-height: 2rem;
+}
+
+input:focus{
+    border-color: #7dc9e2;
+    outline-color: #dceefc;
+    outline-offset: 0;
+}
+
+input[type="submit"] {
+  padding:0 .8em;
+  width: 5em;
+  font-size: .8rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: #62737b;
+  border: 1px solid;
+  border-color: #b4ccce #b3c0c8 #9eb9c2;
+  outline: 0;
+  box-sizing:content-box;
+  box-shadow:inset 0 1px white, 0 1px 2px rgba(black, 0.15);
+  cursor: pointer;
+}
+
+select{
+    cursor: pointer;
+    margin-top: 1.5em;
+    outline:none;
+    border:none;
+}
+
+@media (max-width: 750px) { 
+
+    .header{
+        width: 80%;
+    }  
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (max-width: 540px) {
+
+    .container {
+        width: 18em;
+        }
+
+    input {
+        padding: 0 1.3em;
+}
+}
+
+@media (max-width: 500px) {
+
+    .header{
+        width: 100%;
+    }  
+}
+
+
+
+

@@ -1,0 +1,103 @@
+/********************* Home - Slider *************************/
+.home .home-slider {
+    overflow-x: hidden;
+    height:100vh;
+    position: relative;
+  }
+  
+  .home .home-slider .slide {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    height: 100%;
+  }
+  
+  .home .home-slider .slide .content {
+    flex: 1 1 45rem;
+    
+  }
+  
+  .home .home-slider .slide .image {
+    flex: 1 1 45rem;
+    height: 80%;
+    object-fit: contain;
+  }
+  
+  .home .home-slider .slide .image img {
+    width: 100%;
+    height: 90%;
+  }
+  
+  .home .home-slider .slide .content span {
+    color: var(--brown);
+    font-size: 2.5rem;
+  }
+  
+  .home .home-slider .slide .content h3 {
+    color: var(--black);
+    font-size: 7rem;
+  }
+  
+  .home .home-slider .slide .content p {
+    color: var(--light-color);
+    font-size: 2.2rem;
+    padding: 0.5rem 0;
+    line-height: 1.5;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: var(--orange);
+  }
+
+  @media (max-width: 768px) {
+
+    .home .home-slider {
+       height:50vh;
+       top:2rem;
+  }
+  
+    .home .home-slider .slide .content h3 {
+        font-size: 3rem;
+    }
+
+    .home .home-slider .slide .content span {
+       font-size: 1.5rem;
+       line-height: 1;
+  }
+
+  .home .home-slider .slide .content p {
+    font-size: 1.7rem;
+    line-height: 1.1;
+  }
+
+  .swiper-pagination {
+      position: absolute;
+  }
+ 
+
+  }
+
+  @media (max-width: 400px) {
+
+    .home .home-slider {
+       height:30vh;
+       top:2rem;
+  }
+
+  .home .home-slider .slide .content h3 {
+    font-size: 2rem;
+}
+
+.home .home-slider .slide .content .btn {
+  margin-top: 0.3rem;
+  font-size: 1rem;
+  padding: 0.8em 1em;
+}
+
+.home .home-slider .slide .content p {
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+}
+  

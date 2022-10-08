@@ -1,0 +1,182 @@
+/****************** Toppings Modal ************************/
+
+#addToCart_modal .items{
+    display: flex;
+  }
+  
+  #addToCart_modal .items_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 3em;
+  }
+  
+  #addToCart_modal .modal-header #ITEM_NAME{
+    font-size: 2.3rem;
+    color:var(--black);
+  }
+  
+  #addToCart_modal .modal-body #ITEM_QUANTITY{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  #addToCart_modal .modal-body #TOPPINGS{
+    font-size: 1.5rem;
+    color:white;
+    font-weight: bolder;
+    border-radius: 1em;
+    /* text-decoration: underline; */
+    background-color:var(--light-orange); 
+    width:fit-content;
+    padding:.5em;
+    
+  }
+  
+  .BOX{
+    display:flex;
+    flex-direction: column;
+  }
+  
+  .ToppingsBox{
+    display: flex;
+    flex-direction: column;
+   
+  }
+  
+  .ToppingsBox h3{
+    font-size: 1.8rem;
+    font-family: 'DancingScript';
+    color: var(--pink);
+    margin-top: .5em;
+  }
+  
+  .ToppingsChoices{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(10rem, 1fr));
+    gap: 1rem;
+  }
+  
+  .topping_item{
+    display:flex;
+  }
+  
+  #addToCart_modal .modal-body .image{
+    width:20em;
+    height:20em;
+    margin-right: 1em;
+    margin-left: 1em;
+    border-radius: 10em;
+    margin-bottom: .5em;
+  }
+  
+  #addToCart_modal .modal-body .image img{
+    width:100%;
+    height:100%;
+    border-radius: 10em;
+  }
+  
+  #addToCart_modal  .modal-footer{
+    margin-top:1em;
+  }
+  
+
+  /* Hide the default checkbox */
+  .container2 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+   }
+   
+   .container2 {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 15px;
+    user-select: none;
+    margin-right: .5em;
+   }
+   
+   /* Create a custom checkbox */
+   .checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 1em;
+    width: 1em;
+    background-color: #ccc;
+    border-radius: 25px;
+    transition: 0.15s;
+   }
+   
+   /* When the checkbox is checked, add a green background */
+   .container2 input:checked ~ .checkmark {
+    background-color: limegreen;
+    border-radius: 25px;
+    transition: 0.15s;
+   }
+   
+   /* Create the checkmark/indicator (hidden when not checked) */
+   .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+   }
+   
+   /* Show the checkmark when checked */
+   .container2 input:checked ~ .checkmark:after {
+    display: block;
+   }
+   
+   /* Style the checkmark/indicator */
+   .container2 .checkmark:after {
+    left: 0.35em;
+    top: 0.2em;
+    width: 0.25em;
+    height: 0.5em;
+    border: solid white;
+    border-width: 0 0.15em 0.15em 0;
+    transform: rotate(45deg);
+   }
+  
+  #addToCart_modal .modal-footer .btn-secondary,
+  #addToCart_modal .modal-footer .btn-primary{
+    padding:.3em .5em;
+    border-radius: .5em;
+    font-size: 1.5rem;
+  
+  }
+
+  #addToCart_modal .modal-footer .btn-primary{
+    background-color: var(--blue);
+    padding:.3em 1.5em;
+  }
+
+  #addToCart_modal .modal-footer .btn-primary:hover{
+    background: var(--orange);
+    letter-spacing: 0.1rem;
+  }
+
+  @media (max-width: 750px) {
+
+  #addToCart_modal .modal-body .image{
+    width:10em;
+    height:10em;
+  }
+
+  #addToCart_modal .modal-header #ITEM_NAME{
+    font-size: 1.5rem;
+  }
+
+  
+  @media (max-width: 400px) {
+
+    .ToppingsChoices{
+      display: grid;
+      grid-template-columns: repeat(2, minmax(10rem, 1fr));
+      gap: .5rem;
+    }
+  }

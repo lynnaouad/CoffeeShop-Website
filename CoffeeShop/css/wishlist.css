@@ -1,0 +1,132 @@
+
+.empty_wishlist{
+  width:100vw;
+ height:100vh;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+
+.empty_wishlist .fa-arrow-left{
+  margin-right: 1em;
+}
+
+.empty_wishlist .fa-heart{
+  font-size: 15em;
+  color:#ccc;
+  margin-bottom: .2em;
+
+}
+
+.empty_wishlist h1{
+  font-size: 3em;
+  color:#ccc;
+  font-weight: bolder;
+}
+
+.empty_wishlist h1 a .fa-arrow-left{
+  color:var(--orange);
+}
+
+.empty_wishlist h1 a .fa-arrow-left:hover{
+  color:var(--blue);
+}
+
+.wishlist {
+    position: fixed;
+    margin-top: 6em;
+    background: #fff;
+    padding-bottom: 8rem;
+    width:100%;
+    height: 100vh;
+
+  }
+
+  .wishlist .title {
+    font-size: 2.5rem;
+    padding: 1rem;
+    color: #130f40;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .wishlist .products-container {
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
+    -webkit-animation: fadeUp .4s linear;
+            animation: fadeUp .4s linear;
+  }
+  
+  .wishlist .products-container .box-container {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  
+  .wishlist .products-container .box-container .box {
+    border-radius: .5rem;
+    background: #f7f7f7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    position: relative;
+  }
+  
+  .wishlist .products-container .box-container .box .fa-times {
+    position: absolute;
+    top: .7rem;
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #130f40;
+  }
+  
+  .wishlist .products-container .box-container .box .fa-times:hover {
+    color: #27ae60;
+  }
+  
+  .wishlist .products-container .box-container .box img {
+    width:10em;
+    height: 10rem;
+    border-radius: .5em;
+    object-fit: cover;
+  }
+
+
+  .wishlist .products-container .box-container .box .content .btn:hover{
+    
+      letter-spacing: 0rem;
+    
+  }
+  
+  .wishlist .products-container .box-container .box .content h3 {
+    font-size: 1.5rem;
+    color: #130f40;
+  }
+  
+  .wishlist .products-container .box-container .box .content span {
+    font-size: 1.5rem;
+    color: #666;
+  }
+  
+  .wishlist .products-container .box-container .box .content span.price {
+    color: #27ae60;
+    font-size: 1.7rem;
+  }
+  
+  .wishlist .products-container .box-container .box .content input {
+    width: 8rem;
+    padding: .5rem 1.2rem;
+    font-size: 1.5rem;
+    color: #130f40;
+    margin: .7rem 0;
+  }
+  

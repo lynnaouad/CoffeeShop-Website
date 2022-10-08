@@ -1,0 +1,152 @@
+/********************** Review  ******************/
+
+.progress-label-left {
+    float: left;
+    margin-right: 0.5em;
+    line-height: 1em;
+  }
+  
+  .progress-label-right {
+    float: right;
+    margin-right: 0.5em;
+    line-height: 1em;
+  }
+  
+  .star-light {
+    color: #e9ecef;
+  }
+
+  .star-light2 {
+    color: #ccc;
+  }
+  
+  .star_rating i {
+    cursor: pointer;
+  }
+  
+  .review_input input,
+  .review_input textarea {
+    background: #eee;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  
+  .review_input textarea {
+    height: 20rem;
+    resize: none;
+  }
+  
+  .review .review-slider {
+    overflow-x: hidden;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .review .slide {
+    padding: 2rem;
+    height:auto;
+    box-shadow: var(--box-shadow);
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    position: relative;
+  }
+  
+  .review .slide .fa-quote-right {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 6rem;
+    color: #ccc;
+  }
+  
+  .review .slide .user {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding-bottom: 1.5rem;
+  }
+
+  
+  .review .slide .user h3 {
+    color: var(--black);
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .review .slide .user h4 {
+    color: var(--black);
+    font-size: 1.5rem;
+    
+  }
+  
+  .review .slide .user i {
+    font-size: 1.3rem;
+  }
+  
+  .review .slide p {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: var(--light-color);
+  }
+  
+  .rounded-circle{
+    width:5rem;
+    height: 5rem;
+    background-color: var(--orange);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .rounded-circle .text-center{
+    color:white;
+  }
+  
+  .btn-default{
+    background-color:#ccc;
+  }
+
+
+  @media (max-width: 510px) {
+    .rounded-circle{
+      width:4rem;
+      height: 4rem;
+    }
+
+    .review .slide {
+      padding: 1rem;
+    }
+
+    .review .slide .user h3 {
+      font-size: 1.3rem;
+    }
+
+    .review .slide .user h4 {
+      font-size: 1rem;
+    }
+    
+    .review .slide .user i {
+      font-size: 1.3rem;
+    }
+    
+    .review .slide p {
+      font-size: 1rem;
+      line-height: 1;
+    }
+
+    .review .slide .fa-quote-right {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      font-size: 3rem;
+      color: #ccc;
+    }    
+
+
+  }
+  
