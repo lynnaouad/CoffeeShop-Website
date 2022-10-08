@@ -103,13 +103,13 @@ Download the project from github to your desktop:
       
       **1.** You must have `XAMPP` or `WAMPP` web server.<br>
       
-      **2.** Create a new 'project' folder in: `C:\xampp\htdocs` and **export** your CoffeShop project there.<br><br>
+      **2.** Create a new directory named 'project' in: `C:\xampp\htdocs` and **export** your CoffeShop project there.<br><br>
        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/82551484/194700099-8706612f-13cc-4cc9-9de8-f88426c24da2.png" width="300px;" /></br>
       
       
       **3.** In PhpMyAdmin:<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;-Create Database named: `coffeeshop`.<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;-Import `coffeeshop.sql` file from Database folder.<br>
+      - Create Database named: `coffeeshop`
+      - Import `coffeeshop.sql` file from Database folder.<br>
          
       **4.** Database Connection: If you have a specific `username` or `password` update database connection: `includes\db_connect.php` <br>
        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/82551484/194699715-198b6ccb-5d43-4ea4-b785-f9f07ce9e18a.png" width="500px" /></br>  
