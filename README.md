@@ -72,7 +72,7 @@ Download the project from github to your desktop:
       
       **4.** Once you have navigated to the directory where you want to put your repository, you can use
       ```shell
-      git clone https://github.com/MouhammadAyoub/CVs-repository.git
+      git clone https://github.com/lynnaouad/CoffeeShop-Website.git
       ```
       
       **5.** When you run `git clone https://github.com/MouhammadAyoub/CVs-repository.git`, You should see output like
