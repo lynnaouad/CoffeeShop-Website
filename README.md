@@ -175,6 +175,11 @@ Download the project from github to your desktop:
 - **Responsive:**<br>
 <img src="" ><br>
 
+## Administrator Panel 
+<video controls>
+  <source src="https://github.com/lynnaouad/CoffeeShop-Website/blob/main/Videos/AdminPanel.mp4" type="video/mp4">
+</video>
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
