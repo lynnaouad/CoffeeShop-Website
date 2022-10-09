@@ -144,11 +144,11 @@ Download the project from github to your desktop:
 <img src="https://user-images.githubusercontent.com/82551484/194729140-6500ebaa-8caf-4ac6-98e7-233318d8f736.png" /></br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/82551484/194729578-6624c6ef-84cb-4708-9ab1-144447a6ec21.gif" /></br>
            
-`Note:` We can add item into to wishlist.<br>
+`Note` We can add item into to wishlist.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/82551484/194729537-4c34550b-b337-4f57-a53e-20f4ecba7bac.gif" /><br>    
 <img src="https://user-images.githubusercontent.com/82551484/194728631-8060c7ef-aa5e-481d-aebf-e09c4f644540.png" /><br>
                                                                                                             
-`Note:` We can change the currency.<br>
+`Note` We can change the currency.<br>
 <img src="https://user-images.githubusercontent.com/82551484/194729209-9e110433-88a9-42f0-92de-0a1d9f479a07.png" /><br>
 <br>
 
@@ -168,10 +168,10 @@ Download the project from github to your desktop:
 <img src="https://user-images.githubusercontent.com/82551484/194729434-82854cf7-ff3e-45e3-a669-0b723248cf6f.png" ><br>
 
 - **Responsive:**<br>
-<img height="500px" src="https://user-images.githubusercontent.com/82551484/194754924-e517f0ea-4707-43f9-b212-b725ad3c47e6.gif" ><br>
+<img height="500px" src="https://user-images.githubusercontent.com/82551484/194755770-3246d405-eff8-4cb7-8aa1-7ae3f4e8b679.gif" ><br>
 
 ## Administrator Panel 
-`Note:` the video is available in **CoffeeShop-Website/Videos**.<br>
+`Note` the video is available in **CoffeeShop-Website/Videos**.<br>
 
 
 
