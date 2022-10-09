@@ -7,7 +7,6 @@
 ![Stars](https://img.shields.io/github/stars/lynnaouad/CoffeeShop-Website)&nbsp;
 ![Contributors](https://img.shields.io/github/contributors/lynnaouad/CoffeeShop-Website)&nbsp;
 ![Forks](https://img.shields.io/github/forks/lynnaouad/CoffeeShop-Website)
-![LinkedIn](https://www.linkedin.com/in/lynn-aouad-353171224/)
 
 > Welcome aboard fellow developer, this is where you will find projects which you are free to contribute to. You can contribute by submitting your own scripts, which you think would be amazing for other people to see. 
 
@@ -169,11 +168,12 @@ Download the project from github to your desktop:
 <img src="https://user-images.githubusercontent.com/82551484/194729434-82854cf7-ff3e-45e3-a669-0b723248cf6f.png" ><br>
 
 - **Responsive:**<br>
-<img src="https://user-images.githubusercontent.com/82551484/194754924-e517f0ea-4707-43f9-b212-b725ad3c47e6.gif" ><br>
+<img height="500px" src="https://user-images.githubusercontent.com/82551484/194754924-e517f0ea-4707-43f9-b212-b725ad3c47e6.gif" ><br>
 
 ## Administrator Panel 
 `Note:` the video is available in **CoffeeShop-Website/Videos**.<br>
-https://user-images.githubusercontent.com/82551484/194754272-47f77e07-f02b-4a42-a3f5-cd30aa8433e6.mp4
+
+https://user-images.githubusercontent.com/82551484/194755345-50d2b304-1cb4-4e46-b32a-c41c291411ac.mp4
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
