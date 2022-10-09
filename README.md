@@ -173,7 +173,9 @@ Download the project from github to your desktop:
 ## Administrator Panel 
 `Note:` the video is available in **CoffeeShop-Website/Videos**.<br>
 
-https://user-images.githubusercontent.com/82551484/194755345-50d2b304-1cb4-4e46-b32a-c41c291411ac.mp4
+
+
+<video src="https://user-images.githubusercontent.com/82551484/194755345-50d2b304-1cb4-4e46-b32a-c41c291411ac.mp4" >
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
