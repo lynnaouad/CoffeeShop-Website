@@ -172,13 +172,20 @@ Download the project from github to your desktop:
 <img src="https://user-images.githubusercontent.com/82551484/194729428-e9bbf755-e85c-41d8-bf0a-542826e41eb4.png" ><br>
 <img src="https://user-images.githubusercontent.com/82551484/194729434-82854cf7-ff3e-45e3-a669-0b723248cf6f.png" ><br>
 
+- **Responsive:**<br>
+<img src="" ><br>
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 
 ## Contribution Guidelines
 
 The contribution guidelines are as per the guide [HERE](https://github.com/MouhammadAyoub/CVs-repository/blob/main/CONTRIBUTING.md).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 
 ## Instructions
 
@@ -192,6 +199,8 @@ The contribution guidelines are as per the guide [HERE](https://github.com/Mouha
 - Celebrate your first step into the open source world and contribute more
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 
 ## License
 
@@ -208,6 +217,8 @@ Copyright © 2022, Lynn Aouad
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+
 ## Additional tools to help you get Started with Open-Source Contribution
 
 * [How to Contribute to Open Source Projects – A Beginner's Guide](https://www.freecodecamp.org/news/how-to-contribute-to-open-source-projects-beginners-guide/)
@@ -218,24 +229,20 @@ Copyright © 2022, Lynn Aouad
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
-
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
-
 [HTML5.com]: https://img.shields.io/badge/HTML5-ff7340?style=for-the-badge&logo=html5&logoColor=white
 [HTML5-url]: https://html5.com 
-
 [CSS3.com]: https://img.shields.io/badge/CSS3-4A4A55?style=for-the-badge&logo=css3&logoColor=61DAFB
 [CSS3-url]: https://css3.com 
-
 [JS.com]: https://img.shields.io/badge/JS-EBE663?style=for-the-badge&logo=javascript&logoColor=black
 [JS-url]: https://javascript.com 
-
 [PHP.com]: https://img.shields.io/badge/PHP-ff2814?style=for-the-badge&logo=php&logoColor=61DAFB
 [PHP-url]: https://php.com 
-
 [MYSQL.com]: https://img.shields.io/badge/MYSQL-000000?style=for-the-badge&logo=mysql&logoColor=white
 [MYSQL-url]: https://mysql.com 
------------
+
