@@ -26,9 +26,10 @@ Responsive website that sells coffee, juices, smoothies and milkshakes.<br><br>
  
 ***Admin Side:***
 <ul>
-  <li>Admin can add another admin/manager/team member.</li>
-  <li>Admin can view all statistics and reports (reviews, orders, revenue, customers...)</li>
-  <li>Admin can add a new currency, change delivery cost, manage menu items/toppings/offers...</li>
+  <li>Admin can add another admin, manager and team member.</li>
+  <li>Admin/Manager can view all statistics and reports (reviews, orders, revenue, customers...)</li>
+  <li>Admin/manager can add a new currency and change delivery cost</li>
+  <li>Manager can manage menu items, toppings items, add or remove offers...</li>
 </ul>
 
 ## Built With
