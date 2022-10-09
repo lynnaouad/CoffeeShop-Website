@@ -176,8 +176,8 @@ Download the project from github to your desktop:
 <img src="" ><br>
 
 ## Administrator Panel 
-<video controls>
-  <source src="Videos/AdminPanel.mp4" type="video/mp4">
+<video width="1000" height="600" controls>
+  <source src="https://user-images.githubusercontent.com/82551484/194754025-271ca08f-20e3-4b2f-88d0-f43efb80995e.mp4" type="video/mp4">
 </video>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
