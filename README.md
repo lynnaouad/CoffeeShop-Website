@@ -117,12 +117,8 @@ Download the project from github to your desktop:
       **5.** Open your project: `http://localhost/CoffeShop`
  
       
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> <br>
 
-
-## Usage</br>
-
-`Note:`check folder **Videos** to view the full project and know better about all the website functionalities.<br>
 
 ## Database
 <img src="https://user-images.githubusercontent.com/82551484/194751431-ac416db5-6a8a-4770-994e-94953f6271d7.jpeg" > <br>
@@ -176,9 +172,9 @@ Download the project from github to your desktop:
 <img src="" ><br>
 
 ## Administrator Panel 
-<video width="1000" height="600" controls>
-  <source src="https://user-images.githubusercontent.com/82551484/194754025-271ca08f-20e3-4b2f-88d0-f43efb80995e.mp4" type="video/mp4">
-</video>
+`Note:` the video is available in **CoffeeShop-Website/Videos**.<br>
+https://user-images.githubusercontent.com/82551484/194754272-47f77e07-f02b-4a42-a3f5-cd30aa8433e6.mp4
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
