@@ -208,7 +208,7 @@ The contribution guidelines are as per the guide [HERE](https://github.com/Mouha
 
 ## License
 
-Distributed under the MIT License. See [`LICENSE`](https://github.com/MouhammadAyoub/CVs-repository/blob/main/LICENSE) for more information.  
+Distributed under the MIT License. See [`LICENSE`](https://github.com/lynnaouad/CoffeeShop-Website/blob/main/LICENSE) for more information.  
 Copyright © 2022, Lynn Aouad
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
