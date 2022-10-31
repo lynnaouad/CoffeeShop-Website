@@ -171,6 +171,13 @@ Download the project from github to your desktop:
 - **Responsive:**<br>
 <img height="500px" src="https://user-images.githubusercontent.com/82551484/194755770-3246d405-eff8-4cb7-8aa1-7ae3f4e8b679.gif" ><br>
 
+<br>
+
+
+https://user-images.githubusercontent.com/82551484/198966345-86966546-240a-41bb-811b-bc4b8b83a070.mp4
+
+<br>
+
 ## Administrator Panel 
 `Note` the video is available in **CoffeeShop-Website/Videos**.<br>
 
