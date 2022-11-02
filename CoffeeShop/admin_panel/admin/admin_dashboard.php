@@ -141,7 +141,7 @@ if(isset($_POST["update_cinfo"])) {
                         <div class="col-lg-3 col-md-6 col-sm-6">
                             <?php
 
-                            $result = mysqli_query($conn,"SELECT count(*) as nb FROM orderInfo");
+                            $result = mysqli_query($conn,"SELECT count(*) as nb FROM orderinfo");
                             $row = mysqli_fetch_assoc($result);
 
                             ?>
@@ -169,7 +169,7 @@ if(isset($_POST["update_cinfo"])) {
                         <div class="col-lg-3 col-md-6 col-sm-6">
                              <?php
 
-                            $result = mysqli_query($conn,"SELECT SUM(order_total) as nb FROM orderInfo");
+                            $result = mysqli_query($conn,"SELECT SUM(order_total) as nb FROM orderinfo");
                             $row = mysqli_fetch_assoc($result);
 
                             ?>
@@ -194,7 +194,7 @@ if(isset($_POST["update_cinfo"])) {
                         <div class="col-lg-3 col-md-6 col-sm-6">
                             <?php
 
-                            $result = mysqli_query($conn,"SELECT count(distinct customer_name) as nb FROM orderInfo;");
+                            $result = mysqli_query($conn,"SELECT count(distinct customer_name) as nb FROM orderinfo;");
                             $row = mysqli_fetch_assoc($result);
 
                             ?>
