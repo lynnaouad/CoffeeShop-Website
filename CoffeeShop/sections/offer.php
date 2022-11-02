@@ -49,13 +49,12 @@
             <?php
 
                 // Check if there is other items having a discount different than the max discount
-                $query="SELECT offer_id FROM todayoffer WHERE pourcentage != ?";
-                $stmt=mysqli_prepare($conn,$query);
-                mysqli_stmt_bind_param($stmt,"i",$row['max']);
-                mysqli_execute($stmt);
-                $result=mysqli_stmt_get_result($stmt);
+                $query="SELECT offer_id FROM todayoffer WHERE pourcentage != ".$row['max'];
+                
+                $result=mysqli_query($conn,$query);
+                $row=mysqli_fetch_assoc($result);
 
-                if(mysqli_fetch_assoc($result)){
+                if($row){
             ?>
             
             <div class="grid" data-aos="fade-up">
