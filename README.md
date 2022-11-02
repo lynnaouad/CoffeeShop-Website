@@ -32,6 +32,9 @@ Responsive website that sells coffee, juices, smoothies and milkshakes.<br><br>
   <li>Manager can manage menu items, toppings items, add or remove offers...</li>
 </ul>
 
+## Live Demo
+https://coffee-shop2022.000webhostapp.com/
+
 ## Built With
 
 * [![HTML5][HTML5.com]][HTML5-url]
