@@ -33,7 +33,7 @@ if (isset($_POST["action"]))
 
 
         // Insert order informations into table ORDERINFO
-        $query = "INSERT INTO OrderInfo(`customer_name`, `customer_email`,`customer_phone`, `customer_address`,`customer_city`, `customer_zip`, `customer_state`, `customer_country`, `order_total`,`order_currency`, `order_date`) 
+        $query = "INSERT INTO orderinfo(`customer_name`, `customer_email`,`customer_phone`, `customer_address`,`customer_city`, `customer_zip`, `customer_state`, `customer_country`, `order_total`,`order_currency`, `order_date`) 
                   VALUES ('$customer_name','$customer_email','$customer_number','$customer_address','$customer_city','$customer_zip','$customer_state','$customer_country',$order_total,\" ".$_SESSION['currency']['logo']." \",'$order_date')";
 
         if(mysqli_query($conn,$query))
