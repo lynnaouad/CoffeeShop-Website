@@ -14,7 +14,7 @@ if(isset($_POST["action"])){
         else{
 
             // Select the currency price from table 'Currency'
-            $query = "SELECT convert_price FROM Currency WHERE to_currency=?";         
+            $query = "SELECT convert_price FROM currency WHERE to_currency=?";         
             $stmt=mysqli_prepare($conn,$query);
             mysqli_stmt_bind_param($stmt,"s",$_POST["currency_logo"]);
             mysqli_stmt_execute($stmt);
