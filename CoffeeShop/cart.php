@@ -106,7 +106,7 @@
                                         // loop the toppings list and fetch the toppings image and price.
                                         for($i=0; $i< count($values['product_toppings']); $i++){
       
-                                            $query = "SELECT topping_image,topping_price FROM Toppings WHERE topping_name=?";
+                                            $query = "SELECT topping_image,topping_price FROM toppings WHERE topping_name=?";
                                             $stmt = mysqli_prepare($conn,$query);
                                             mysqli_stmt_bind_param($stmt,"s",$values['product_toppings'][$i]);
                                             mysqli_stmt_execute($stmt);
