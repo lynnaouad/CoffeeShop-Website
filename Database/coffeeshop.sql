@@ -543,7 +543,7 @@ INSERT INTO `toppingscategory` (`topping_category_id`, `topping_category_name`) 
 --
 DROP TABLE IF EXISTS `todayoffer`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `todayoffer`  AS SELECT `offer`.`offer_id` AS `offer_id`, `offer`.`item_id` AS `item_id`, `offer`.`new_price` AS `new_price`, `offer`.`pourcentage` AS `pourcentage`, `offer`.`start_date` AS `start_date`, `offer`.`end_date` AS `end_date` FROM `offer` WHERE (select curdate() between `offer`.`start_date` and `offer`.`end_date`) ;
+CREATE VIEW `todayoffer`  AS SELECT `offer`.`offer_id` AS `offer_id`, `offer`.`item_id` AS `item_id`, `offer`.`new_price` AS `new_price`, `offer`.`pourcentage` AS `pourcentage`, `offer`.`start_date` AS `start_date`, `offer`.`end_date` AS `end_date` FROM `offer` WHERE (select curdate() between `offer`.`start_date` and `offer`.`end_date`) ;
 
 --
 -- Indexes for dumped tables
