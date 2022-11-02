@@ -40,7 +40,7 @@
             // All currencies are in the table "Currency".
             // we want to fill the SELECT options.
 
-            $query="SELECT to_currency FROM Currency";
+            $query="SELECT to_currency FROM currency";
             $result=mysqli_query($conn,$query);  ?>
 
             <select id="currency_list">
