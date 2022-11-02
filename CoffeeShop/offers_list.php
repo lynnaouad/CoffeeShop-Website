@@ -7,10 +7,9 @@
             * item is removed from offers section and added to the menu section with the old price
      #################################################################################################-->
 
-
-<?php session_start();
-  $currency_logo = $_SESSION["currency"]["logo"];
-  $currency_price = $_SESSION["currency"]["price"];
+<?php session_start(); ob_start();
+    $currency_logo = $_SESSION["currency"]["logo"];
+    $currency_price = $_SESSION["currency"]["price"];
 ?>
 
 <!DOCTYPE html>
@@ -81,14 +80,10 @@ if(isset($_GET["section"])){
         while($row=mysqli_fetch_assoc($result)){
 
             // get all informations of the item from table 'MENUITEM'
-            $query2="SELECT * FROM MenuItem WHERE item_id=?";
-            $stmt2=mysqli_prepare($conn,$query2);
-            mysqli_stmt_bind_param($stmt2,"i",$row['item_id']);
-            mysqli_execute($stmt2);
-            $result2=mysqli_stmt_get_result($stmt2);
+            $query2="SELECT * FROM menuitem WHERE item_id= ".$row['item_id'];
+            $result2=mysqli_query($conn,$query2);
+            $row2=mysqli_fetch_assoc($result2);
 
-            $row2=mysqli_fetch_assoc($result2);  
-                    
             // if user changes the currency --> convert prices 
             // else --> $currency_price=1, the prices doesn't change.
 
