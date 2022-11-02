@@ -6,7 +6,7 @@
 <?php
 
 // fetch from database the toppings categories
-$query="SELECT * FROM ToppingsCategory";
+$query="SELECT * FROM toppingscategory";
 $result=mysqli_query($conn,$query);
 
 while($row=mysqli_fetch_assoc($result)){    ?>
@@ -23,7 +23,7 @@ while($row=mysqli_fetch_assoc($result)){    ?>
                 <?php
 
                 // fetch all items in this category
-                $query2="SELECT topping_name,topping_image,topping_price FROM Toppings WHERE topping_category_id=?";
+                $query2="SELECT topping_name,topping_image,topping_price FROM toppings WHERE topping_category_id=?";
                 $stmt2=mysqli_prepare($conn,$query2);
                 mysqli_stmt_bind_param($stmt2,"i",$row['topping_category_id']);
                 mysqli_stmt_execute($stmt2);
