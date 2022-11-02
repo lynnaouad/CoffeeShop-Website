@@ -58,7 +58,7 @@
 
 <!-- get all team member informations from table TEAM  -->
 <?php
-    $query="SELECT member_name, member_image, member_role FROM Team";
+    $query="SELECT member_name, member_image, member_role FROM team";
     $result=mysqli_query($conn,$query);
     
     if($result){
