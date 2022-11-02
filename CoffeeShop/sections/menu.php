@@ -6,7 +6,7 @@
 <?php 
 
 //fetch list of menues from database 
-$query="SELECT * FROM Menu";
+$query="SELECT * FROM menu";
 $result=mysqli_query($conn,$query);
 
 if($result){
@@ -39,7 +39,7 @@ if($result){
 // then we don't display it in the menu section, we display it in the offer section 
 
 $query="SELECT m1.item_id,item_name,item_price,item_image,item_description,m1.menu_id,menu_name 
-        FROM MenuItem m1,Menu m2
+        FROM menuitem m1,menu m2
         WHERE m1.menu_id=m2.menu_id AND item_id NOT IN (SELECT item_id FROM todayoffer)";
 
 $result=mysqli_query($conn,$query);
