@@ -101,10 +101,10 @@ include_once('../../includes/db_connect.php');
 													
 												<?php
 														$id = $_GET["id"];
-														$result = mysqli_query($conn,"SELECT order_item_id, order_items.order_id, item_name, item_quantity, toppings_price, item_total, order_currency FROM orderInfo , order_items WHERE orderInfo.order_id=$id and order_items.order_id=$id;"); 
+														$result = mysqli_query($conn,"SELECT order_item_id, order_items.order_id, item_name, item_quantity, toppings_price, item_total, order_currency FROM orderinfo , order_items WHERE orderinfo.order_id=$id and order_items.order_id=$id;"); 
 														while ($row = mysqli_fetch_assoc($result)) { 
 															
-															$query2="SELECT item_image,item_price From menuItem where item_name='".$row['item_name']."'";
+															$query2="SELECT item_image,item_price From menuitem where item_name='".$row['item_name']."'";
 															$result2= mysqli_query($conn,$query2);
 															$row2=mysqli_fetch_assoc($result2);
 															?>
