@@ -55,7 +55,7 @@ if(isset($_POST["submit"])) {
 	}
 
 
-	$query = "INSERT INTO Menu(`menu_name`, `menu_logo`) 
+	$query = "INSERT INTO menu(`menu_name`, `menu_logo`) 
               VALUES ('$menu_name','$filename')";
 
 	mysqli_query($conn,$query);
@@ -78,7 +78,7 @@ if(isset($_POST["update_info"])) {
 
 		move_uploaded_file($_FILES['new_image']['tmp_name'],$location);
 
-		$query = "UPDATE Menu set menu_logo='".$filename."' WHERE menu_id=$id";
+		$query = "UPDATE menu set menu_logo='".$filename."' WHERE menu_id=$id";
 
 		mysqli_query($conn,$query);
 	}
@@ -140,7 +140,7 @@ if(isset($_POST["update_info"])) {
                                         <?php 
 
                                         // fetch all menu categories
-                                        $query = "SELECT * FROM Menu";
+                                        $query = "SELECT * FROM menu";
                                         $result = mysqli_query($conn,$query);
 
                                         while($row = mysqli_fetch_assoc($result)){ ?>
