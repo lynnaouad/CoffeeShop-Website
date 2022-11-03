@@ -63,14 +63,14 @@ if(isset($_POST["submit"])) {
 		move_uploaded_file($_FILES['image']['tmp_name'],$location);
 	}
 
-    $query = "SELECT menu_id FROM Menu where menu_name = '$item_menu'";
+    $query = "SELECT menu_id FROM menu where menu_name = '$item_menu'";
     $result = mysqli_query($conn,$query);
     $row = mysqli_fetch_assoc($result);
 
     $menu_id = $row["menu_id"];
 
 
-	$query = "INSERT INTO MenuItem(`item_name`, `item_price`,`item_image`,`item_description`,`menu_id`) 
+	$query = "INSERT INTO menuitem(`item_name`, `item_price`,`item_image`,`item_description`,`menu_id`) 
               VALUES ('$item_name','$item_price','$img','$item_description','$menu_id')";
 
 	mysqli_query($conn,$query);
@@ -107,13 +107,13 @@ if(isset($_POST["update_info"])) {
 
             move_uploaded_file($_FILES['new_image']['tmp_name'],$location);
 
-            $query = "UPDATE MenuItem set item_image='".$img."' WHERE item_id=$id";
+            $query = "UPDATE menuitem set item_image='".$img."' WHERE item_id=$id";
 
             mysqli_query($conn,$query);
 		}
 
 		// update all other infos
-		$query = "UPDATE MenuItem set item_name='".$new_item_name."',
+		$query = "UPDATE menuitem set item_name='".$new_item_name."',
 									item_price='".$new_item_price."',
 									item_description='".$new_item_description."'
 									WHERE item_id=$id";
@@ -138,7 +138,7 @@ if(isset($_POST["update_info"])) {
 
             move_uploaded_file($_FILES['new_image']['tmp_name'],$location);
 
-            $query = "UPDATE MenuItem set item_image='".$img."' WHERE item_id=$id";
+            $query = "UPDATE menuitem set item_image='".$img."' WHERE item_id=$id";
 
             mysqli_query($conn,$query);
 			header("Refresh: 0;");
@@ -152,18 +152,18 @@ if(isset($_POST["update_info"])) {
 			rename($old_image_path , "../../images/".$new_item_menu."/".$old_image_name[4]);
 			$img = "images/".$new_item_menu."/".$old_image_name[4];
 
-            $query = "UPDATE MenuItem set item_image='".$img."' WHERE item_id=$id";
+            $query = "UPDATE menuitem set item_image='".$img."' WHERE item_id=$id";
 
             mysqli_query($conn,$query);
 			header("Refresh: 0;");
 
         }
 
-        $query = "SELECT menu_id from Menu where menu_name='$new_item_menu'";
+        $query = "SELECT menu_id from menu where menu_name='$new_item_menu'";
         $result = mysqli_query($conn,$query);
         $row = mysqli_fetch_assoc($result);
 
-	    $query = "UPDATE MenuItem set item_name='".$new_item_name."',
+	    $query = "UPDATE menuitem set item_name='".$new_item_name."',
                                   item_price='".$new_item_price."',
                                   item_description='".$new_item_description."',
                                   menu_id=".$row['menu_id']."
@@ -225,7 +225,7 @@ if(isset($_POST["update_info"])) {
                                         <?php 
 
                                         // fetch all menu items
-                                        $query = "SELECT menu_name FROM Menu";
+                                        $query = "SELECT menu_name FROM menu";
                                         $result = mysqli_query($conn,$query); 
                                             
                                         echo "<select class='menu-tabs'>";
@@ -239,7 +239,7 @@ if(isset($_POST["update_info"])) {
                                        echo "</select>";
 
                                        $query = "SELECT item_id,item_name,item_price,item_image,item_description,m1.menu_id,menu_name 
-                                       FROM MenuItem m1,Menu m2 WHERE m1.menu_id=m2.menu_id";
+                                       FROM menuitem m1,menu m2 WHERE m1.menu_id=m2.menu_id";
                                         $result = mysqli_query($conn,$query);   ?>
 
                                         <div class="menuItems">
@@ -303,7 +303,7 @@ if(isset($_POST["update_info"])) {
                                     <tr>
                                         <td>
                                     <?php
-                                        $query = "SELECT menu_name FROM Menu";
+                                        $query = "SELECT menu_name FROM menu";
                                         $result = mysqli_query($conn,$query); 
                                         echo "Menu category: ";    
                                         echo "<select name='menu'>";
@@ -400,7 +400,7 @@ if(isset($_POST["update_info"])) {
 															<label class="col-sm-3 col-md-4 control-label">Menu category:</label>
 															<div class="col-sm-8">
                                                             <?php
-                                                                $query = "SELECT menu_name FROM Menu";
+                                                                $query = "SELECT menu_name FROM menu";
                                                                 $result = mysqli_query($conn,$query); 
                             
                                                                 echo "<select name='mc' id='mc'>";
