@@ -33,7 +33,7 @@ Responsive website that sells coffee, juices, smoothies and milkshakes.<br><br>
 </ul>
 
 ## Live Demo
-https://coffee-shop2022.000webhostapp.com/
+https://coffee-shop2022.000webhostapp.com/  <br>
 https://coffee-shop2022.000webhostapp.com/admin_panel/
 
 ## Built With
