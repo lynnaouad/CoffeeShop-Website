@@ -104,7 +104,7 @@ include_once('../../includes/db_connect.php');
 												<tbody>
 				
 													<?php
-														$result = mysqli_query($conn,"SELECT * FROM orderInfo"); 
+														$result = mysqli_query($conn,"SELECT * FROM orderinfo"); 
 														while ($row = mysqli_fetch_assoc($result)) { ?>
 
 															<tr>
