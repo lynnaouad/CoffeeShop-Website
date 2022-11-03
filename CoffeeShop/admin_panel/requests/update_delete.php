@@ -9,7 +9,7 @@ if(isset($_POST['action'])) {
 
         $manager_id = $_POST['manager_id'];
 
-        $query = "DELETE FROM Manager where manager_id=$manager_id";
+        $query = "DELETE FROM manager where manager_id=$manager_id";
         mysqli_query($conn,$query);
     }
 
@@ -18,7 +18,7 @@ if(isset($_POST['action'])) {
 
         $member_id = $_POST['member_id'];
 
-        $query = "DELETE FROM Team where member_id=$member_id";
+        $query = "DELETE FROM team where member_id=$member_id";
         mysqli_query($conn,$query);
 
     }
@@ -28,7 +28,7 @@ if(isset($_POST['action'])) {
 
         $admin_id = $_POST['admin_id'];
 
-        $query = "DELETE FROM admin where admin_id=$admin_id";
+        $query = "DELETE FROM administrator where admin_id=$admin_id";
         mysqli_query($conn,$query);
 
     }
@@ -40,7 +40,7 @@ if(isset($_POST['action'])) {
 
         // delete items from offer table if exists
 
-        $query = "SELECT offer.item_id FROM MenuItem,offer where MenuItem.item_id = offer.item_id and MenuItem.menu_id=$menu_id";
+        $query = "SELECT offer.item_id FROM menuitem,offer where menuitem.item_id = offer.item_id and menuitem.menu_id=$menu_id";
         $result = mysqli_query($conn,$query);
 
         while($row = mysqli_fetch_assoc($result)){
@@ -51,7 +51,7 @@ if(isset($_POST['action'])) {
         }
 
         // delete all items inside this menu
-        $query = "DELETE FROM MenuItem where menu_id=$menu_id";
+        $query = "DELETE FROM menuitem where menu_id=$menu_id";
         mysqli_query($conn,$query);
 
         // delete menu
@@ -71,7 +71,7 @@ if(isset($_POST['action'])) {
         mysqli_query($conn,$query);
 
         // delete item from MenuItem table
-        $query = "DELETE FROM MenuItem where item_id=$item_id";
+        $query = "DELETE FROM menuitem where item_id=$item_id";
         mysqli_query($conn,$query);;
 
     }
@@ -87,7 +87,7 @@ if(isset($_POST['action'])) {
         mysqli_query($conn,$query);
 
         // delete menu
-        $query = "DELETE FROM toppingsCategory where topping_category_id=$toppingCat_id";
+        $query = "DELETE FROM toppingscategory where topping_category_id=$toppingCat_id";
         mysqli_query($conn,$query);
 
     }
