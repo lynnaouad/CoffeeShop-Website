@@ -44,7 +44,7 @@ if(isset($_POST["submit"])) {
 
 	$toppingCat_name = trim($_POST['name']);
 
-	$query = "INSERT INTO toppingsCategory(`topping_category_name`) 
+	$query = "INSERT INTO toppingscategory(`topping_category_name`) 
               VALUES ('$toppingCat_name')";
 
 	mysqli_query($conn,$query);
@@ -59,7 +59,7 @@ if(isset($_POST["update_info"])) {
 
 	$id = $_POST['hidden_id'];
 
-	$query = "UPDATE toppingsCategory set topping_category_name='".$new_name."' WHERE topping_category_id=$id";
+	$query = "UPDATE toppingscategory set topping_category_name='".$new_name."' WHERE topping_category_id=$id";
 
 	mysqli_query($conn,$query);
 	header("Refresh: 0;");
@@ -123,7 +123,7 @@ if(isset($_POST["update_info"])) {
 												<tbody>
 				
 													<?php
-														$result = mysqli_query($conn,"SELECT * FROM toppingsCategory"); 
+														$result = mysqli_query($conn,"SELECT * FROM toppingscategory"); 
 														while ($row = mysqli_fetch_assoc($result)) { ?>
 
 															<tr>
