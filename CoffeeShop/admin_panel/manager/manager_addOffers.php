@@ -47,7 +47,7 @@ if(isset($_POST["submit"])) {
     $start_date = trim($_POST['start_date']);
     $end_date = trim($_POST['end_date']);
 
-    $query="SELECT item_id,item_price  FROM MenuItem WHERE item_name='$item_name'";
+    $query="SELECT item_id,item_price  FROM menuitem WHERE item_name='$item_name'";
     $result = mysqli_query($conn,$query); 
     $row = mysqli_fetch_assoc($result);
 
@@ -141,7 +141,7 @@ if(isset($_POST["update_info"])) {
 
                                        
 
-                                        $query = "SELECT offer_id, item_name, item_price,item_image, new_price, pourcentage, start_date, end_date FROM offer,MenuItem WHERE offer.item_id = MenuItem.item_id";
+                                        $query = "SELECT offer_id, item_name, item_price,item_image, new_price, pourcentage, start_date, end_date FROM offer,menuitem WHERE offer.item_id = menuitem.item_id";
                                         $result = mysqli_query($conn,$query);   ?>
 
                                         <div class="offer">
@@ -227,7 +227,7 @@ if(isset($_POST["update_info"])) {
                                         <td>
                                     <?php
                                        $query="SELECT item_name,item_id,item_price
-                                       FROM MenuItem
+                                       FROM menuitem
                                        WHERE item_id NOT IN (SELECT item_id FROM todayoffer)";
 
                                         $result = mysqli_query($conn,$query); 
