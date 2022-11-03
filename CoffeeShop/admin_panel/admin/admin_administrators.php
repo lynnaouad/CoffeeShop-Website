@@ -58,7 +58,7 @@ if(isset($_POST["submit"])) {
 	}
 
 
-	$query = "INSERT INTO Admin(`admin_name`, `admin_phone`,`admin_email`, `admin_image`,`admin_username`, `admin_password`) 
+	$query = "INSERT INTO administrator(`admin_name`, `admin_phone`,`admin_email`, `admin_image`,`admin_username`, `admin_password`) 
               VALUES ('$admin_name','$admin_phone','$admin_email','$filename','$admin_username','$admin_password')";
 
 	mysqli_query($conn,$query);
@@ -90,12 +90,12 @@ if(isset($_POST["update_info"])) {
 
 		move_uploaded_file($_FILES['new_image']['tmp_name'],$location);
 
-		$query = "UPDATE Admin set admin_image='".$filename."' WHERE admin_id=$id";
+		$query = "UPDATE administrator set admin_image='".$filename."' WHERE admin_id=$id";
 
 		mysqli_query($conn,$query);
 	}
 
-	$query = "UPDATE Admin set admin_name='".$new_name."', 
+	$query = "UPDATE administrator set admin_name='".$new_name."', 
 									 admin_phone='".$new_phone."', 
 									 admin_email='".$new_email."',
 									 admin_username='".$new_username."',  
@@ -168,7 +168,7 @@ if(isset($_POST["update_info"])) {
 												<tbody>
 				
 													<?php
-														$result = mysqli_query($conn,"SELECT * FROM Admin"); 
+														$result = mysqli_query($conn,"SELECT * FROM administrator"); 
 														while ($row = mysqli_fetch_assoc($result)) { ?>
 
 															<tr>
