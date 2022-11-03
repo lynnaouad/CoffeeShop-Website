@@ -449,9 +449,10 @@ $(document).ready(function(){
     topping_image = $("#image_" + id ).attr("src");
     topping_name = $("#name_" + id ).text();
     topping_price = $("#price_" + id ).text();
+    topping_price = topping_price.substring(0,topping_price.length - 1);
     // topping_menu = $(".topping_"+id).attr("id");
 
-     $('#NAME').text("Update Menu - id:"+id);
+     $('#NAME').text("Update topping - id:"+id);
 
      $('#hidden_id').val(id);
 
