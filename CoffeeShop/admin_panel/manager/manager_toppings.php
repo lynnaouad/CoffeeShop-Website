@@ -61,14 +61,14 @@ if(isset($_POST["submit"])) {
 		move_uploaded_file($_FILES['image']['tmp_name'],$location);
 	}
 
-    $query = "SELECT topping_category_id FROM toppingsCategory where topping_category_name= '$topping_cat'";
+    $query = "SELECT topping_category_id FROM toppingscategory where topping_category_name= '$topping_cat'";
     $result = mysqli_query($conn,$query);
     $row = mysqli_fetch_assoc($result);
 
     $cat_id = $row["topping_category_id"];
 
 
-	$query = "INSERT INTO `Toppings` (`topping_name`,`topping_image`,`topping_price`,`topping_category_id`) VALUES ('$topping_name','$img','$topping_price','$cat_id')";
+	$query = "INSERT INTO `toppings` (`topping_name`,`topping_image`,`topping_price`,`topping_category_id`) VALUES ('$topping_name','$img','$topping_price','$cat_id')";
 
 	mysqli_query($conn,$query);
 	header("Refresh: 0;");
@@ -88,7 +88,7 @@ if(isset($_POST["update_info"])) {
         // manager didn't change topping category
         if($new_item_menu != "select..."){
 
-            $query = "SELECT topping_category_id from toppingsCategory where topping_category_name='$new_topping_cat'";
+            $query = "SELECT topping_category_id from toppingscategory where topping_category_name='$new_topping_cat'";
             $result = mysqli_query($conn,$query);
             $row = mysqli_fetch_assoc($result);
 
@@ -173,7 +173,7 @@ if(isset($_POST["update_info"])) {
                                         <?php 
 
                                         // fetch all toppings items
-                                        $query = "SELECT topping_category_name FROM toppingsCategory";
+                                        $query = "SELECT topping_category_name FROM toppingscategory";
                                         $result = mysqli_query($conn,$query); 
 
                                             
@@ -189,7 +189,7 @@ if(isset($_POST["update_info"])) {
 
 
                                          $query = "SELECT topping_id, topping_name, topping_price, topping_image,t1.topping_category_id,topping_category_name 
-                                       FROM toppings t1,toppingsCategory t2 WHERE t1.topping_category_id=t2.topping_category_id";
+                                       FROM toppings t1,toppingscategory t2 WHERE t1.topping_category_id=t2.topping_category_id";
 
 
                                         $result = mysqli_query($conn,$query);   ?>
@@ -256,7 +256,7 @@ if(isset($_POST["update_info"])) {
                                     <tr>
                                         <td>
                                     <?php
-                                        $query = "SELECT topping_category_name FROM toppingsCategory";
+                                        $query = "SELECT topping_category_name FROM toppingscategory";
                                         $result = mysqli_query($conn,$query); 
                                         echo "Topping category: ";    
                                         echo "<select name='menu'>";
@@ -344,7 +344,7 @@ if(isset($_POST["update_info"])) {
 															<label class="col-sm-3 col-md-4 control-label">Topping category:</label>
 															<div class="col-sm-8">
                                                             <?php
-                                                                $query = "SELECT topping_category_name FROM toppingsCategory";
+                                                                $query = "SELECT topping_category_name FROM toppingscategory";
                                                                 $result = mysqli_query($conn,$query); 
                             
                                                                 echo "<select name='tc' id='tc'>";
