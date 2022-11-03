@@ -101,10 +101,10 @@ include_once('../../includes/db_connect.php');
 													
 												<?php
 														$id = $_GET["id"];
-														$result = mysqli_query($conn,"SELECT order_item_id, order_items.order_id, item_name, item_quantity, toppings_price, item_total, order_currency FROM orderInfo , order_items WHERE orderInfo.order_id=$id and order_items.order_id=$id;"); 
+														$result = mysqli_query($conn,"SELECT order_item_id, order_items.order_id, item_name, item_quantity, toppings_price, item_total, order_currency FROM orderinfo , order_items WHERE orderinfo.order_id=$id and order_items.order_id=$id;"); 
 														while ($row = mysqli_fetch_assoc($result)) { 
 															
-															$query2="SELECT item_image,item_price From menuItem where item_name='".$row['item_name']."'";
+															$query2="SELECT item_image,item_price From menuitem where item_name='".$row['item_name']."'";
 															$result2= mysqli_query($conn,$query2);
 															$row2=mysqli_fetch_assoc($result2);
 															?>
@@ -185,7 +185,7 @@ include_once('../../includes/db_connect.php');
                                         <?php
 
 										$query = "SELECT topping_id, topping_name, topping_price, topping_image,t1.topping_category_id,topping_category_name 
-                                       			FROM toppings t1,toppingsCategory t2 WHERE t1.topping_category_id=t2.topping_category_id";
+                                       			FROM toppings t1,toppingscategory t2 WHERE t1.topping_category_id=t2.topping_category_id";
 
                                         $result = mysqli_query($conn,$query);  
 
