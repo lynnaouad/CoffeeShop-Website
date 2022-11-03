@@ -64,7 +64,7 @@ if(isset($_POST["submit"])) {
 	}
 
 
-	$query = "INSERT INTO Manager(`manager_name`, `manager_phone`,`manager_email`, `manager_image`,`manager_username`, `manager_password`) 
+	$query = "INSERT INTO manager(`manager_name`, `manager_phone`,`manager_email`, `manager_image`,`manager_username`, `manager_password`) 
               VALUES ('$manager_name','$manager_phone','$manager_email','$filename','$manager_username','$manager_password')";
 
 	mysqli_query($conn,$query);
@@ -90,12 +90,12 @@ if(isset($_POST["update_info"])) {
 
 		move_uploaded_file($_FILES['new_image']['tmp_name'],$location);
 
-		$query = "UPDATE Manager set manager_image='".$filename."' WHERE manager_id=$id";
+		$query = "UPDATE manager set manager_image='".$filename."' WHERE manager_id=$id";
 
 		mysqli_query($conn,$query);
 	}
 
-	$query = "UPDATE Manager set manager_name='".$new_name."', 
+	$query = "UPDATE manager set manager_name='".$new_name."', 
 									 manager_phone='".$new_phone."', 
 									 manager_email='".$new_email."',
 									 manager_username='".$new_username."',  
@@ -168,7 +168,7 @@ if(isset($_POST["update_info"])) {
 												<tbody>
 				
 													<?php
-														$result = mysqli_query($conn,"SELECT * FROM Manager"); 
+														$result = mysqli_query($conn,"SELECT * FROM manager"); 
 														while ($row = mysqli_fetch_assoc($result)) { ?>
 
 															<tr>
