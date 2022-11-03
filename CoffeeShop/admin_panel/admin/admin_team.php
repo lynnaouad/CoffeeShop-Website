@@ -65,7 +65,7 @@ if(isset($_POST["submit"])) {
 	}
 
 
-	$query = "INSERT INTO `Team` (`member_name`,`member_image`,`member_role`,`member_phone`,`member_email`,`member_salary`,`member_username`,`member_password`) VALUES 
+	$query = "INSERT INTO `team` (`member_name`,`member_image`,`member_role`,`member_phone`,`member_email`,`member_salary`,`member_username`,`member_password`) VALUES 
 	('$member_name','$filename','$member_role','$member_phone','$member_email','$member_salary','$member_username','$member_password')";
 
 	mysqli_query($conn,$query);
@@ -91,12 +91,12 @@ if(isset($_POST["update_info"])) {
 
 		move_uploaded_file($_FILES['new_image']['tmp_name'],$location);
 
-		$query = "UPDATE Team set member_image='".$filename."' WHERE member_id=$id";
+		$query = "UPDATE `team` set member_image='".$filename."' WHERE member_id=$id";
 
 		mysqli_query($conn,$query);
 	}
 
-	$query = "UPDATE Team set member_name='".$new_name."', 
+	$query = "UPDATE `team` set member_name='".$new_name."', 
 							  member_role='".$new_role."', 
 							  member_phone='".$new_phone."', 
 							  member_email='".$new_email."',
@@ -105,8 +105,13 @@ if(isset($_POST["update_info"])) {
 							  member_password='".$new_password."' 
 					WHERE member_id=$id";
 
-	mysqli_query($conn,$query);
-	header("Refresh: 0;");
+	if(mysqli_query($conn,$query)){
+	    header("Refresh: 0;");
+	}
+	else{
+	    echo mysqli_error($conn);
+	}
+	
 
 }
 
@@ -120,14 +125,16 @@ if(isset($_POST["update_info"])) {
         <?php 
 
         // sidebar
-		include('../includes/admin_sidebar.php'); ?>
+		include('../includes/admin_sidebar.php'); 
+		?>
 
         <div id="content">
 		
         <?php 
 			$section="Team Members";
 			
-			include('../includes/top_navbar.php'); ?>
+			include('../includes/top_navbar.php'); 
+			?>
 		
 			<div class="main-content">
 	
@@ -171,7 +178,7 @@ if(isset($_POST["update_info"])) {
 												<tbody>
 				
 													<?php
-														$result = mysqli_query($conn,"SELECT * FROM Team"); 
+														$result = mysqli_query($conn,"SELECT * FROM team"); 
 														while ($row = mysqli_fetch_assoc($result)) { ?>
 
 															<tr>
