@@ -119,6 +119,7 @@ $(document).ready(function(){
       member_phone = $("#phone_" + id).text();
       member_email = $("#email_" + id).text();
       member_salary = $("#salary_" + id ).text();
+      member_salary = member_salary.substring(0,member_salary.length - 1);
       member_username = $("#username_" + id).text();
       member_password =$("#password_" + id).text();
  
