@@ -178,7 +178,7 @@ Download the project from github to your desktop:
 <br>
 
 
-https://user-images.githubusercontent.com/82551484/198966345-86966546-240a-41bb-811b-bc4b8b83a070.mp4
+<video src="https://user-images.githubusercontent.com/82551484/198966345-86966546-240a-41bb-811b-bc4b8b83a070.mp4" />
 
 <br>
 
@@ -187,8 +187,9 @@ https://user-images.githubusercontent.com/82551484/198966345-86966546-240a-41bb-
 
 
 
-<video src="https://user-images.githubusercontent.com/82551484/194755345-50d2b304-1cb4-4e46-b32a-c41c291411ac.mp4" >
+<video src="https://user-images.githubusercontent.com/82551484/194755345-50d2b304-1cb4-4e46-b32a-c41c291411ac.mp4" />
 
+<br>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -219,14 +220,14 @@ The contribution guidelines are as per the guide [HERE](https://github.com/Mouha
 
 ## License
 
-Distributed under the MIT License. See [`LICENSE`](https://github.com/lynnaouad/CoffeeShop-Website/blob/main/LICENSE) for more information.  
+Distributed under the MIT License. See [`LICENSE`](https://github.com/lynnaouad/CoffeeShop-Website/blob/main/LICENSE.md) for more information.  
 Copyright © 2022, Lynn Aouad
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contact
 
-- Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;[lynnaouad34@gmail.com](mailto:lynnaouad34@gmail.com)
+- Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;[lynn.aouad@outlook.com](mailto:lynn.aouad@outlook.com)
 
 - Project Link : &nbsp;[https://github.com/lynnaouad/CoffeeShop-Website](https://github.com/lynnaouad/CoffeeShop-Website)
 
