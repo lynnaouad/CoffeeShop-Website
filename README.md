@@ -177,8 +177,7 @@ Download the project from github to your desktop:
 
 <br>
 
-
-<video src="https://user-images.githubusercontent.com/82551484/198966345-86966546-240a-41bb-811b-bc4b8b83a070.mp4" />
+https://user-images.githubusercontent.com/82551484/200152314-7eaa88a0-a1c5-44a4-97f2-a939e2856c3f.mp4
 
 <br>
 
@@ -186,21 +185,11 @@ Download the project from github to your desktop:
 `Note` the video is available in **CoffeeShop-Website/Videos**.<br>
 
 
-
-<video src="https://user-images.githubusercontent.com/82551484/194755345-50d2b304-1cb4-4e46-b32a-c41c291411ac.mp4" />
+<video src="https://user-images.githubusercontent.com/82551484/194755345-50d2b304-1cb4-4e46-b32a-c41c291411ac.mp4" ></video>
 
 <br>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-## Contribution Guidelines
-
-The contribution guidelines are as per the guide [HERE](https://github.com/MouhammadAyoub/CVs-repository/blob/main/CONTRIBUTING.md).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 ## Instructions
